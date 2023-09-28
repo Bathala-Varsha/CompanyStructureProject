@@ -18,23 +18,23 @@ toString() returns a string representation of the employee in the format "ID Nam
 
 employeeStatus() provides a string representation of the employee's status.
 
-TechnicalEmployee Class (inherits from Employee):
+2. TechnicalEmployee Class (inherits from Employee):
 
-2. TechnicalEmployee represents technical employees with a default base salary of 75000.
+TechnicalEmployee represents technical employees with a default base salary of 75000.
 
 employeeStatus() returns a string representation that includes the employee's ID and the number of successful check-ins.
 
-BusinessEmployee Class (inherits from Employee):
+3. BusinessEmployee Class (inherits from Employee):
 
-3. BusinessEmployee represents business employees with a default salary of 50000.
+BusinessEmployee represents business employees with a default salary of 50000.
    
 getBonusBudget() maintains and returns the bonus budget for the team they support.
 
 employeeStatus() returns a string representation including the employee's ID, name, and budget.
 
-SoftwareEngineer Class (inherits from TechnicalEmployee):
+4. SoftwareEngineer Class (inherits from TechnicalEmployee):
 
-4. SoftwareEngineer represents software engineers.
+SoftwareEngineer represents software engineers.
    
 getCodeAccess() returns whether the engineer has access to code.
 
@@ -44,9 +44,9 @@ getSuccessfulCheckIns() returns the number of successful code check-ins.
 
 checkInCode() checks if the manager approves of a code check-in and updates the check-in count accordingly.
 
-Accountant Class (inherits from BusinessEmployee):
+5. Accountant Class (inherits from BusinessEmployee):
 
-5. Accountant represents accountants with a bonus budget.
+Accountant represents accountants with a bonus budget.
     
 getTeamSupported() returns the TechnicalLead that the accountant is supporting.
 
@@ -56,9 +56,9 @@ approveBonus(double bonus) checks if the accountant can approve a bonus based on
 
 employeeStatus() returns a string representation including the budget and the TechnicalLead's name.
 
-TechnicalLead Class (inherits from TechnicalEmployee):
+6. TechnicalLead Class (inherits from TechnicalEmployee):
 
-6. TechnicalLead represents technical leads with a higher base salary and a default headcount of 4.
+TechnicalLead represents technical leads with a higher base salary and a default headcount of 4.
     
 hasHeadCount() checks if there's room for more direct reports.
 
@@ -70,9 +70,9 @@ requestBonus(Employee e, double bonus) checks if the bonus can be approved by th
 
 getTeamStatus() returns a string representation of the manager and their direct reports.
 
-BusinessLead Class (inherits from BusinessEmployee):
+7. BusinessLead Class (inherits from BusinessEmployee):
 
-7. BusinessLead represents business leads with a higher base salary and a default headcount of 10.
+BusinessLead represents business leads with a higher base salary and a default headcount of 10.
     
 hasHeadCount() checks if there's room for more direct reports.
 
@@ -81,10 +81,15 @@ addReport(Accountant e, TechnicalLead supportTeam) adds an accountant as a direc
 requestBonus(Employee e, double bonus) checks if the bonus can be afforded by the business lead's budget.
 
 approveBonus(Employee e, double bonus) consults accountants to see if the bonus can be afforded and rewards it if possible.
-Testing:
 
-8. The CompanyStructure class contains the main method for testing.
+8. CompanyStructure Class
+
+The CompanyStructure class contains the main method for testing.
     
 It creates instances of various employees and managers, adds direct reports, and prints their statuses to test the functionality of the classes.
 
-Each class is structured to represent different types of employees within the company hierarchy, with methods that allow them to interact with each other and perform their specific roles in the organization. The inheritance, interfaces, and abstract classes help to establish relationships and code sharing among these classes.
+Each class is structured to represent different types of employees within the company hierarchy, with methods that allow them to interact 
+
+with each other and perform their specific roles in the organization. The inheritance, interfaces, and abstract classes help to establish 
+
+relationships and code sharing among these classes.
