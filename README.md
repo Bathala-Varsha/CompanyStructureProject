@@ -1,21 +1,12 @@
 1. Employee Class:
-
 The Employee class represents a basic employee in the company.
-
 It has a constructor that takes the employee's name and base salary as parameters and assigns them to the employee object.
-
 getBaseSalary() returns the base salary of the employee.
-
 getName() returns the name of the employee.
-
 getEmployeeID() returns a unique employee ID starting from 1 for the first employee.
-
 getManager() returns a reference to the employee's manager.
-
 equals(Employee other) compares two employees based on their IDs.
-
 toString() returns a string representation of the employee in the format "ID Name".
-
 employeeStatus() provides a string representation of the employee's status.
 
 2. TechnicalEmployee Class (inherits from Employee):
