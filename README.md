@@ -20,13 +20,13 @@ employeeStatus() provides a string representation of the employee's status.
 
 TechnicalEmployee Class (inherits from Employee):
 
-3. TechnicalEmployee represents technical employees with a default base salary of 75000.
+2. TechnicalEmployee represents technical employees with a default base salary of 75000.
 
 employeeStatus() returns a string representation that includes the employee's ID and the number of successful check-ins.
 
 BusinessEmployee Class (inherits from Employee):
 
-5. BusinessEmployee represents business employees with a default salary of 50000.
+3. BusinessEmployee represents business employees with a default salary of 50000.
    
 getBonusBudget() maintains and returns the bonus budget for the team they support.
 
@@ -34,7 +34,7 @@ employeeStatus() returns a string representation including the employee's ID, na
 
 SoftwareEngineer Class (inherits from TechnicalEmployee):
 
-7. SoftwareEngineer represents software engineers.
+4. SoftwareEngineer represents software engineers.
    
 getCodeAccess() returns whether the engineer has access to code.
 
@@ -46,7 +46,7 @@ checkInCode() checks if the manager approves of a code check-in and updates the 
 
 Accountant Class (inherits from BusinessEmployee):
 
-9. Accountant represents accountants with a bonus budget.
+5. Accountant represents accountants with a bonus budget.
     
 getTeamSupported() returns the TechnicalLead that the accountant is supporting.
 
@@ -58,7 +58,7 @@ employeeStatus() returns a string representation including the budget and the Te
 
 TechnicalLead Class (inherits from TechnicalEmployee):
 
-11. TechnicalLead represents technical leads with a higher base salary and a default headcount of 4.
+6. TechnicalLead represents technical leads with a higher base salary and a default headcount of 4.
     
 hasHeadCount() checks if there's room for more direct reports.
 
@@ -72,7 +72,7 @@ getTeamStatus() returns a string representation of the manager and their direct 
 
 BusinessLead Class (inherits from BusinessEmployee):
 
-13. BusinessLead represents business leads with a higher base salary and a default headcount of 10.
+7. BusinessLead represents business leads with a higher base salary and a default headcount of 10.
     
 hasHeadCount() checks if there's room for more direct reports.
 
@@ -83,7 +83,7 @@ requestBonus(Employee e, double bonus) checks if the bonus can be afforded by th
 approveBonus(Employee e, double bonus) consults accountants to see if the bonus can be afforded and rewards it if possible.
 Testing:
 
-15. The CompanyStructure class contains the main method for testing.
+8. The CompanyStructure class contains the main method for testing.
     
 It creates instances of various employees and managers, adds direct reports, and prints their statuses to test the functionality of the classes.
 
